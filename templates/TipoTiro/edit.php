@@ -13,14 +13,14 @@
                 ['action' => 'delete', $tipoTiro->ID_tipo_tiro],
                 ['confirm' => __('Are you sure you want to delete # {0}?', $tipoTiro->ID_tipo_tiro), 'class' => 'side-nav-item']
             ) ?>
-            <?= $this->Html->link(__('List Tipo Tiro'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
+            <?= $this->Html->link(__('Listar Tipo Tiro'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
         </div>
     </aside>
     <div class="column-responsive column-80">
         <div class="tipoTiro form content">
             <?= $this->Form->create($tipoTiro) ?>
             <fieldset>
-                <legend><?= __('Edit Tipo Tiro') ?></legend>
+                <legend><?= __('Editar Tipo Tiro') ?></legend>
                 <?php
                     echo $this->Form->control('Nombre');
                     echo $this->Form->control('Puntaje');

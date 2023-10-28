@@ -13,14 +13,14 @@
                 ['action' => 'delete', $jugadore->ID_jugador],
                 ['confirm' => __('Are you sure you want to delete # {0}?', $jugadore->ID_jugador), 'class' => 'side-nav-item']
             ) ?>
-            <?= $this->Html->link(__('List Jugadores'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
+            <?= $this->Html->link(__('Listar Jugadores'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
         </div>
     </aside>
     <div class="column-responsive column-80">
         <div class="jugadores form content">
             <?= $this->Form->create($jugadore, ['type'=>'file']) ?>
             <fieldset>
-                <legend><?= __('Edit Jugadore') ?></legend>
+                <legend><?= __('Editar Jugador') ?></legend>
                 <?php
                     echo $this->Form->control('Nombres');
                     echo $this->Form->control('Apellidos');

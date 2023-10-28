@@ -8,14 +8,14 @@
     <aside class="column">
         <div class="side-nav">
             <h4 class="heading"><?= __('Actions') ?></h4>
-            <?= $this->Html->link(__('List Jugadores'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
+            <?= $this->Html->link(__('Listar Jugadores'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
         </div>
     </aside>
     <div class="column-responsive column-80">
         <div class="jugadores form content">
             <?= $this->Form->create($jugadore, ['type'=>'file']) ?>
             <fieldset>
-                <legend><?= __('Add Jugadore') ?></legend>
+                <legend><?= __('Agregar Jugador') ?></legend>
                 <?php
                     echo $this->Form->control('Nombres');
                     echo $this->Form->control('Apellidos');

@@ -9,7 +9,7 @@
 </div>
 <hr>
 <div class="jugadores index content">
-    <?= $this->Html->link(__('New Jugadore'), ['action' => 'add'], ['class' => 'button float-right']) ?>
+    <?= $this->Html->link(__('Nuevo Jugador'), ['action' => 'add'], ['class' => 'button float-right']) ?>
     <h3><?= __('Jugadores') ?></h3>
     <div class="table-responsive">
         <table>
@@ -36,9 +36,9 @@
                     </td>
                     <td><?= $jugadore->ID_equipo === null ? '' : $this->Number->format($jugadore->ID_equipo) ?></td>
                     <td class="actions">
-                        <?= $this->Html->link(__('View'), ['action' => 'view', $jugadore->ID_jugador]) ?>
-                        <?= $this->Html->link(__('Edit'), ['action' => 'edit', $jugadore->ID_jugador]) ?>
-                        <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $jugadore->ID_jugador], ['confirm' => __('Are you sure you want to delete # {0}?', $jugadore->ID_jugador)]) ?>
+                        <?= $this->Html->link(__('Ver'), ['action' => 'view', $jugadore->ID_jugador]) ?>
+                        <?= $this->Html->link(__('Editar'), ['action' => 'edit', $jugadore->ID_jugador]) ?>
+                        <?= $this->Form->postLink(__('Eliminar'), ['action' => 'delete', $jugadore->ID_jugador], ['confirm' => __('Are you sure you want to delete # {0}?', $jugadore->ID_jugador)]) ?>
                     </td>
                 </tr>
                 <?php endforeach; ?>

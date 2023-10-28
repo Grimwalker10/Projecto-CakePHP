@@ -8,10 +8,10 @@
     <aside class="column">
         <div class="side-nav">
             <h4 class="heading"><?= __('Actions') ?></h4>
-            <?= $this->Html->link(__('Edit Resultado'), ['action' => 'edit', $resultado->ID_resultado], ['class' => 'side-nav-item']) ?>
-            <?= $this->Form->postLink(__('Delete Resultado'), ['action' => 'delete', $resultado->ID_resultado], ['confirm' => __('Are you sure you want to delete # {0}?', $resultado->ID_resultado), 'class' => 'side-nav-item']) ?>
-            <?= $this->Html->link(__('List Resultados'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
-            <?= $this->Html->link(__('New Resultado'), ['action' => 'add'], ['class' => 'side-nav-item']) ?>
+            <?= $this->Html->link(__('Editar Resultado'), ['action' => 'edit', $resultado->ID_resultado], ['class' => 'side-nav-item']) ?>
+            <?= $this->Form->postLink(__('Eliminar Resultado'), ['action' => 'delete', $resultado->ID_resultado], ['confirm' => __('Are you sure you want to delete # {0}?', $resultado->ID_resultado), 'class' => 'side-nav-item']) ?>
+            <?= $this->Html->link(__('Listar Resultados'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
+            <?= $this->Html->link(__('Nuevo Resultado'), ['action' => 'add'], ['class' => 'side-nav-item']) ?>
         </div>
     </aside>
     <div class="column-responsive column-80">

@@ -13,14 +13,14 @@
                 ['action' => 'delete', $resultado->ID_resultado],
                 ['confirm' => __('Are you sure you want to delete # {0}?', $resultado->ID_resultado), 'class' => 'side-nav-item']
             ) ?>
-            <?= $this->Html->link(__('List Resultados'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
+            <?= $this->Html->link(__('Listar Resultados'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
         </div>
     </aside>
     <div class="column-responsive column-80">
         <div class="resultados form content">
             <?= $this->Form->create($resultado) ?>
             <fieldset>
-                <legend><?= __('Edit Resultado') ?></legend>
+                <legend><?= __('Editar Resultado') ?></legend>
                 <?php
                     echo $this->Form->control('ID_jugador');
                     echo $this->Form->control('Jornada');

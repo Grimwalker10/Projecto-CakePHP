@@ -5,7 +5,7 @@
  */
 ?>
 <div class="equipos index content">
-    <?= $this->Html->link(__('New Equipo'), ['action' => 'add'], ['class' => 'button float-right']) ?>
+    <?= $this->Html->link(__('Nuevo Equipo'), ['action' => 'add'], ['class' => 'button float-right']) ?>
     <h3><?= __('Equipos') ?></h3>
     <div class="table-responsive">
         <table>
@@ -26,9 +26,9 @@
                     <?= $this->Html->image('Equipos/'.$equipo->Logo_equipo, array('width'=>100, 'height'=> 100)) ?>
                     </td>
                     <td class="actions">
-                        <?= $this->Html->link(__('View'), ['action' => 'view', $equipo->ID_equipo]) ?>
-                        <?= $this->Html->link(__('Edit'), ['action' => 'edit', $equipo->ID_equipo]) ?>
-                        <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $equipo->ID_equipo], ['confirm' => __('Are you sure you want to delete # {0}?', $equipo->ID_equipo)]) ?>
+                        <?= $this->Html->link(__('Ver'), ['action' => 'view', $equipo->ID_equipo]) ?>
+                        <?= $this->Html->link(__('Editar'), ['action' => 'edit', $equipo->ID_equipo]) ?>
+                        <?= $this->Form->postLink(__('Eliminar'), ['action' => 'delete', $equipo->ID_equipo], ['confirm' => __('Are you sure you want to delete # {0}?', $equipo->ID_equipo)]) ?>
                         <?= $this->Html->link('Generar Informe PDF', ['action' => 'generarInforme', $equipo->ID_equipo], ['class' => 'button']) ?>
                     </td>
                 </tr>

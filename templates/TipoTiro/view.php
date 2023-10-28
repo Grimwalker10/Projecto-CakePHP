@@ -8,10 +8,10 @@
     <aside class="column">
         <div class="side-nav">
             <h4 class="heading"><?= __('Actions') ?></h4>
-            <?= $this->Html->link(__('Edit Tipo Tiro'), ['action' => 'edit', $tipoTiro->ID_tipo_tiro], ['class' => 'side-nav-item']) ?>
-            <?= $this->Form->postLink(__('Delete Tipo Tiro'), ['action' => 'delete', $tipoTiro->ID_tipo_tiro], ['confirm' => __('Are you sure you want to delete # {0}?', $tipoTiro->ID_tipo_tiro), 'class' => 'side-nav-item']) ?>
-            <?= $this->Html->link(__('List Tipo Tiro'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
-            <?= $this->Html->link(__('New Tipo Tiro'), ['action' => 'add'], ['class' => 'side-nav-item']) ?>
+            <?= $this->Html->link(__('Editar Tipo Tiro'), ['action' => 'edit', $tipoTiro->ID_tipo_tiro], ['class' => 'side-nav-item']) ?>
+            <?= $this->Form->postLink(__('Eliminar Tipo Tiro'), ['action' => 'delete', $tipoTiro->ID_tipo_tiro], ['confirm' => __('Are you sure you want to delete # {0}?', $tipoTiro->ID_tipo_tiro), 'class' => 'side-nav-item']) ?>
+            <?= $this->Html->link(__('Listar Tipo Tiro'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
+            <?= $this->Html->link(__('Nuevo Tipo Tiro'), ['action' => 'add'], ['class' => 'side-nav-item']) ?>
         </div>
     </aside>
     <div class="column-responsive column-80">

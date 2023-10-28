@@ -8,10 +8,10 @@
     <aside class="column">
         <div class="side-nav">
             <h4 class="heading"><?= __('Actions') ?></h4>
-            <?= $this->Html->link(__('Edit Jugadore'), ['action' => 'edit', $jugadore->ID_jugador], ['class' => 'side-nav-item']) ?>
-            <?= $this->Form->postLink(__('Delete Jugadore'), ['action' => 'delete', $jugadore->ID_jugador], ['confirm' => __('Are you sure you want to delete # {0}?', $jugadore->ID_jugador), 'class' => 'side-nav-item']) ?>
-            <?= $this->Html->link(__('List Jugadores'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
-            <?= $this->Html->link(__('New Jugadore'), ['action' => 'add'], ['class' => 'side-nav-item']) ?>
+            <?= $this->Html->link(__('Editar Jugadores'), ['action' => 'edit', $jugadore->ID_jugador], ['class' => 'side-nav-item']) ?>
+            <?= $this->Form->postLink(__('Eliminar Jugadores'), ['action' => 'delete', $jugadore->ID_jugador], ['confirm' => __('Are you sure you want to delete # {0}?', $jugadore->ID_jugador), 'class' => 'side-nav-item']) ?>
+            <?= $this->Html->link(__('Listar Jugadores'), ['action' => 'index'], ['class' => 'side-nav-item']) ?>
+            <?= $this->Html->link(__('Nuevo Jugador'), ['action' => 'add'], ['class' => 'side-nav-item']) ?>
         </div>
     </aside>
     <div class="column-responsive column-80">

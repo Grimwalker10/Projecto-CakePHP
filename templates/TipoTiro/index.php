@@ -5,7 +5,7 @@
  */
 ?>
 <div class="tipoTiro index content">
-    <?= $this->Html->link(__('New Tipo Tiro'), ['action' => 'add'], ['class' => 'button float-right']) ?>
+    <?= $this->Html->link(__('Nuevo Tipo Tiro'), ['action' => 'add'], ['class' => 'button float-right']) ?>
     <h3><?= __('Tipo Tiro') ?></h3>
     <div class="table-responsive">
         <table>
@@ -24,9 +24,9 @@
                     <td><?= h($tipoTiro->Nombre) ?></td>
                     <td><?= $this->Number->format($tipoTiro->Puntaje) ?></td>
                     <td class="actions">
-                        <?= $this->Html->link(__('View'), ['action' => 'view', $tipoTiro->ID_tipo_tiro]) ?>
-                        <?= $this->Html->link(__('Edit'), ['action' => 'edit', $tipoTiro->ID_tipo_tiro]) ?>
-                        <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $tipoTiro->ID_tipo_tiro], ['confirm' => __('Are you sure you want to delete # {0}?', $tipoTiro->ID_tipo_tiro)]) ?>
+                        <?= $this->Html->link(__('Ver'), ['action' => 'view', $tipoTiro->ID_tipo_tiro]) ?>
+                        <?= $this->Html->link(__('Editar'), ['action' => 'edit', $tipoTiro->ID_tipo_tiro]) ?>
+                        <?= $this->Form->postLink(__('Eliminar'), ['action' => 'delete', $tipoTiro->ID_tipo_tiro], ['confirm' => __('Are you sure you want to delete # {0}?', $tipoTiro->ID_tipo_tiro)]) ?>
                     </td>
                 </tr>
                 <?php endforeach; ?>
